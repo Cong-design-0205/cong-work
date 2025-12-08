@@ -1,0 +1,143 @@
+题目 ①：给定一个 list [1,2,3,4,5]，请把每个数字乘以 2，输出一个新 list。
+
+numbers = [1, 2, 3, 4, 5]
+result = []
+
+for n in numbers:
+    result.append(n * 2)
+
+print(result)
+
+
+题目 ②：给定一个 list [10, 25, 3, 8, 50]，请找出里面的最大值。
+
+numbers = [10, 25, 3, 8, 50]
+
+max_value = numbers[0]   # 第一个数字当作初始最大值
+
+for n in numbers:
+    if n > max_value:
+        max_value = n     # 找到更大的就更新
+
+print(max_value)
+
+
+
+题目 ③ 给定一个 list：numbers = [3, 12, 7, 20, 5, 18]请你把所有“奇数”挑出来，放到一个新的 list 里，并打印出来。
+
+numbers = [3, 12, 7, 20, 5, 18]
+result = []
+
+for n in numbers:
+    if n % 2 == 1:     # 奇数判断
+        result.append(n)
+
+print(result)
+
+
+题目 ④：给定一个 list，请把所有 “大于 10 的数字” 挑出来放到一个新 list 里。
+
+
+numbers = [4, 15, 2, 33, 7, 18, 1]
+result = []
+
+for n in numbers:
+    if n > 10:
+        result.append(n)
+
+print(result)
+
+
+题目 ⑤：给定一个 list，所有数字的和（total）
+
+所有数字的平均值（average）
+
+
+numbers = [3, 8, 15, 22, 7, 14, 9, 30]
+total = 0
+
+for n in numbers:
+    total += n
+
+y = len(numbers)
+average = total / y
+
+print(total)
+print(average)
+
+
+
+题目⑥: 找出列表中的最大值和最小值（不能用 max / min）
+
+
+numbers = [12, 5, 23, 7, 19, 3, 30, 15]
+max_value = numbers[0]
+min_value = numbers[0]
+
+
+
+for n in numbers:
+    if n > max_value:
+        max_value = n    
+
+    if n < min_value:
+        min_value = n
+
+print(max_value)
+print(min_value)
+
+
+
+
+题目⑦统计列表中大于 10 的数字个数
+
+
+numbers = [5, 12, 3, 18, 7, 25, 2, 30]
+count = 0
+
+for n in numbers:
+  if n > 10:
+   count += 1
+
+print(count)
+
+
+
+题目⑧统计所有数字的总和
+
+numbers = [4, 10, 6, 3, 12, 8]
+total = 0
+
+for n in numbers:
+total += n
+
+print(total)
+
+
+
+题目⑨统计 + 累加（两个任务）
+numbers = [4, 12, 7, 18, 3, 25, 9]
+count = 0
+total = 0
+
+for n in numbers:
+   if n > 10:
+     count += 1
+     total += n
+
+print(total)
+print(count)
+
+
+题目10找出大于 10 的数字的最大值和最小值
+
+numbers = [15, 3, 22, 8, 19, 5, 30, 12]
+max_value = numbers[0]
+min_value = numbers[0]
+
+for n in numbers:
+   if n > 10:
+
+
+
+
